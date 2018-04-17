@@ -10,7 +10,7 @@ int main()
 	double X=2;
 	double T=0.5;
 	int Nx= (int) X/dx +1;
-	int Nt= (int) T/dt +1;
+	int Nt= T/dt +1;
 	
 	double *utxnew;
 	double *utxold;
@@ -34,7 +34,7 @@ int main()
 			utxold[i]=0;
 		}
 	}
-	for(j=0;j<Nt;j++)
+	for(j=1;j<Nt;j++)
 	{
 		utxnew[0]=0;
 		utxnew[Nx-1]=0;
