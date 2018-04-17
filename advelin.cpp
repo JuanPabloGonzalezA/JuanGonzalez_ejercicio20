@@ -34,9 +34,7 @@ int main()
 			utxold[i]=0;
 		}
 	}
-
-	
-	for(j=1;j<Nt;j++)
+	for(j=0;j<Nt;j++)
 	{
 		utxnew[0]=0;
 		utxnew[Nx-1]=0;
